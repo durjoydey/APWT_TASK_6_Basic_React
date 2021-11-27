@@ -1,32 +1,34 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Home from './Components/Home';
+import Student from './Components/Student';
 import Contact from './Components/Contact';
-import Foot from "./Components/Foot";
 import Head from './Components/Head';
+import Foot from './Components/Foot';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
-import StudentDetail from './Components/StudentDetail';
+import StudentDetails from './Components/StudentDetails';
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
+<Router>
       <Head/>
       <Switch>
         <Route exact path="/">
           <Home/>
         </Route>
-        <Route exact path="/profile">
-          <Profile/>
+        <Route exact path="/Student">
+          <Student/>
         </Route>
         <Route exact path="/contact">
           <Contact/>
         </Route>
         <Route exact path="/student/:id">
-          <StudentDetail/>
+          <StudentDetails/>
         </Route>
+
       </Switch>
       <Foot/>
     </Router>

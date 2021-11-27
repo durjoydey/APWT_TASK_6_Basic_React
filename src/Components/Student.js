@@ -1,9 +1,13 @@
+
 import React from "react"
-const Student = (props) =>{
+function Student(props){
+
     return(
-        <dive>
-            <p>Student: <b>{props.name}</b> Price: <b>{props.id}</b></p>
-        </dive>
+        <div>
+            <p>Student Name: <b> {props.name} </b>, ID:<b> {props.id}</b>, CGPA:<b> {props.cgpa}</b> </p>
+        </div>
+
     )
 }
+
 export default Student;
